@@ -8,6 +8,8 @@ import {
   MousePointer,
   Users,
 } from "lucide-react";
+import { getDiagnosisKesehatan} from "./SupabaseService";
+
 
 // Mock function untuk menggantikan postDiagnosisKesehatan
 const postDiagnosisKesehatan = async (data) => {
