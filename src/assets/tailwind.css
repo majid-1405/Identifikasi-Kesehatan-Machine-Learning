@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+/* @font-face {
+    font-family: 'Barlow';
+    src: url('/fonts/Barlow-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('/fonts/Poppins-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('/fonts/Poppins-ExtraBold.ttf');
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('/fonts/Lato-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'MostserratLight';
+    src: url('/fonts/Montserrat-ExtraLight.ttf');
+}
+
+@font-face {
+    font-family: 'MostserratItalic';
+    src: url('/fonts/Montserrat-ExtraLightItalic.ttf');
+}
+
+@font-face {
+    font-family: 'MostserratThin';
+    src: url('/fonts/Montserrat-Thin.ttf');
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('/fonts/Oswald-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('/fonts/Raleway-ExtraBold.ttf');
+}
+
+@theme {
+    --font-barlow: "Barlow", sans-serif;
+    --font-poppins: "Poppins", sans-serif;
+    --font-poppins-extrabold: "Poppins", sans-serif;
+    --font-lato: "Lato", sans-serif;
+    --font-montserratlight: "MostserratLight", sans-serif;
+    --font-montserratitalic: "MostserratItalic",  sans-serif;
+    --font-montserratthin: "MostserratThin",  sans-serif;
+    --font-oswald: "Oswald", sans-serif;
+    --font-raleway: "Raleway", sans-serif;
+    
+    --color-latar: #f3f4f6;
+    --color-teks: #374151; 
+    --color-teks-samping: #6b7280;
+    --color-garis: #e5e7eb; 
+    --color-hijau: #00B074; 
+    --color-merah: #ef4444; 
+    --color-biru: #3b82f6;
+    --color-kuning: #f59e0b; 
+} */
