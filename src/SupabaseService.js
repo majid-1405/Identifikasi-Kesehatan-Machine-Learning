@@ -14,7 +14,7 @@ const HEADERS = {
 };
 
 /**
- * ✅ POST data diagnosis ke tabel `input_data_kesehatan`
+ * ✅ POST data diagnosis ke tabel `input_data_kesehatan` dengan delay 1 detik
  */
 export async function postDiagnosisKesehatan(data) {
   try {
@@ -23,7 +23,11 @@ export async function postDiagnosisKesehatan(data) {
     const response = await axios.post(BASE_URL_DIAGNOSIS, data, { headers: HEADERS });
 
     console.log("✅ Data berhasil disimpan ke Supabase:", response.data);
-    return response.data;
+
+    // ⏱️ Tambahkan delay 1 detik
+    return new Promise((resolve) => {
+      setTimeout(() => resolve(response.data), 1000);
+    });
   } catch (error) {
     const status = error?.response?.status;
     const detail = error?.response?.data;
@@ -35,18 +39,5 @@ export async function postDiagnosisKesehatan(data) {
     });
 
     throw new Error(detail?.message || error.message || "Unknown error");
-  }
-}
-
-/**
- * ✅ GET semua data diagnosis dari Supabase
- */
-export async function getDiagnosisKesehatan() {
-  try {
-    const response = await axios.get(BASE_URL_DIAGNOSIS, { headers: HEADERS });
-    return response.data;
-  } catch (error) {
-    console.error("❌ Gagal mengambil data dari Supabase:", error?.response?.data || error.message);
-    throw new Error(error?.response?.data?.message || error.message);
   }
 }

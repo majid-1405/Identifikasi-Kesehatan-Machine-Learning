@@ -8,16 +8,16 @@ import {
   MousePointer,
   Users,
 } from "lucide-react";
-import { getDiagnosisKesehatan} from "./SupabaseService";
+import {postDiagnosisKesehatan} from "./SupabaseService";
 
 
 // Mock function untuk menggantikan postDiagnosisKesehatan
-const postDiagnosisKesehatan = async (data) => {
-  // Simulasi API call
-  return new Promise((resolve) => {
-    setTimeout(() => resolve(data), 1000);
-  });
-};
+// const postDiagnosisKesehatan = async (data) => {
+//   // Simulasi API call
+//   return new Promise((resolve) => {
+//     setTimeout(() => resolve(data), 1000);
+//   });
+// };
 
 export default function DiagnosisForm() {
   const [form, setForm] = useState({
